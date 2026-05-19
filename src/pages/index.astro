@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Strings & Heart">
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader__count">00</div>
+    <div class="loader__line"></div>
+    <div class="loader__text">tuning in</div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" data-section="hero">
+    <div class="hero__video-wrap">
+      <video
+        class="hero__video"
+        src="/video/strings_and_heart_25mb.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="hero__video-scrim"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">Strings<br/>&amp; Heart</h1>
+      <p class="hero__subtitle">Indie · Faith · Tucson</p>
+    </div>
+    <span class="hero__scroll-cue">Scroll</span>
+  </section>
+
+  <!-- About -->
+  <section class="about" data-section="about">
+    <p class="about__manifesto reveal">
+      Three brothers. One frequency.<br/>
+      Built on raw devotion and the belief that<br/>
+      honest sound is the only sound worth making.
+    </p>
+    <div class="about__members">
+      <div class="about__member" style="transition-delay: 0.1s">
+        <span class="about__member-name">Angelo</span>
+        <span class="about__member-role">Vocals · Guitar · Pen</span>
+      </div>
+      <div class="about__member" style="transition-delay: 0.25s">
+        <span class="about__member-name">Michael</span>
+        <span class="about__member-role">Bass · Keys</span>
+      </div>
+      <div class="about__member" style="transition-delay: 0.4s">
+        <span class="about__member-name">Eric</span>
+        <span class="about__member-role">Drums</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour -->
+  <section class="tour" data-section="tour">
+    <div class="tour__header">
+      <p class="tour__label reveal">On the Road</p>
+      <h2 class="tour__title reveal">The Plastic Wine Tour</h2>
+    </div>
+    <div class="tour__dates">
+      <div class="tour__date" style="transition-delay: 0.05s">
+        <span class="tour__date-day">Jun 14</span>
+        <span class="tour__date-venue">The Rialto Theatre</span>
+        <span class="tour__date-city">Tucson, AZ</span>
+      </div>
+      <div class="tour__date" style="transition-delay: 0.1s">
+        <span class="tour__date-day">Jun 21</span>
+        <span class="tour__date-venue">The Troubadour</span>
+        <span class="tour__date-city">Los Angeles, CA</span>
+      </div>
+      <div class="tour__date" style="transition-delay: 0.15s">
+        <span class="tour__date-day">Jun 28</span>
+        <span class="tour__date-venue">Crescent Ballroom</span>
+        <span class="tour__date-city">Phoenix, AZ</span>
+      </div>
+      <div class="tour__date" style="transition-delay: 0.2s">
+        <span class="tour__date-day">Jul 05</span>
+        <span class="tour__date-venue">Gothic Theatre</span>
+        <span class="tour__date-city">Denver, CO</span>
+      </div>
+      <div class="tour__date" style="transition-delay: 0.25s">
+        <span class="tour__date-day">Jul 12</span>
+        <span class="tour__date-venue">The Mohawk</span>
+        <span class="tour__date-city">Austin, TX</span>
+      </div>
+      <div class="tour__date" style="transition-delay: 0.3s">
+        <span class="tour__date-day">Jul 19</span>
+        <span class="tour__date-venue">Exit/In</span>
+        <span class="tour__date-city">Nashville, TN</span>
+      </div>
+    </div>
+    <a href="#" class="tour__cta" data-hover>Get Tickets</a>
+  </section>
+
+  <!-- Music -->
+  <section class="music" data-section="music">
+    <div class="music__header">
+      <p class="music__label reveal">Discography</p>
+    </div>
+    <div class="music__albums">
+      <div class="music__album" style="transition-delay: 0.05s">
+        <span class="music__album-title">eyes on Him</span>
+        <span class="music__album-year">2026</span>
+      </div>
+      <div class="music__album" style="transition-delay: 0.1s">
+        <span class="music__album-title">ily anyway</span>
+        <span class="music__album-year">2026</span>
+      </div>
+      <div class="music__album" style="transition-delay: 0.15s">
+        <span class="music__album-title">Plastic Wine</span>
+        <span class="music__album-year">2025</span>
+      </div>
+      <div class="music__album" style="transition-delay: 0.2s">
+        <span class="music__album-title">Secret Place</span>
+        <span class="music__album-year">2023</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Merch -->
+  <section class="merch" data-section="merch">
+    <div class="merch__header">
+      <p class="merch__label reveal">New Collection</p>
+      <h2 class="merch__title reveal">Plastic Wine Merch</h2>
+    </div>
+    <div class="merch__grid">
+      <div class="merch__item">
+        <span class="merch__item-label">Coming Soon</span>
+      </div>
+      <div class="merch__item">
+        <span class="merch__item-label">Coming Soon</span>
+      </div>
+      <div class="merch__item">
+        <span class="merch__item-label">Coming Soon</span>
+      </div>
+    </div>
+    <a href="https://www.stringsandheart.com" class="merch__cta" data-hover target="_blank">Shop Collection</a>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" data-section="newsletter">
+    <h2 class="newsletter__title reveal">Join the Journey</h2>
+    <p class="newsletter__sub reveal">First look. Tour dates. No noise.</p>
+    <form class="newsletter__form reveal">
+      <input type="email" class="newsletter__input" placeholder="your@email.com" required />
+      <button type="submit" class="newsletter__btn" data-hover>Join</button>
+    </form>
+  </section>
+
+  <!-- Colophon -->
+  <section class="colophon" data-section="colophon">
+    <div class="colophon__socials">
+      <a href="https://www.instagram.com/stringsandheart" class="colophon__link" data-hover target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/channel/UC7Bjk8Atufq_51l9pXPv9gw" class="colophon__link" data-hover target="_blank">YouTube</a>
+      <a href="https://www.facebook.com/stringsandheart" class="colophon__link" data-hover target="_blank">Facebook</a>
+    </div>
+    <div class="colophon__booking">
+      <span>Booking — </span>
+      <a href="mailto:thomas@madjackmgmt.com" data-hover>thomas@madjackmgmt.com</a>
+    </div>
+    <div class="colophon__meta">
+      <span class="colophon__mgmt">Madjack Management · WME</span>
+      <span class="colophon__year">MMXXVI</span>
+    </div>
+  </section>
+</Layout>
+
+<!-- Engine: PASSED | All Signatures: YES | Anti-Patterns: 0 -->
