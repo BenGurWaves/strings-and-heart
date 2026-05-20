@@ -135,7 +135,9 @@ const { title } = Astro.props;
         var videoReady = false;
         var count = 0;
         var maxDuration = 4000;
+        var forceCompleteTimeout = 6000;
         var startTime = Date.now();
+        var forceCompleteTimer = null;
 
         if (video) {
           video.addEventListener('canplaythrough', function() {
@@ -145,6 +147,11 @@ const { title } = Astro.props;
             setTimeout(function() { videoReady = true; }, 300);
           });
         }
+
+        // Safety timeout: force completion even if video never loads
+        forceCompleteTimer = setTimeout(function() {
+          videoReady = true;
+        }, forceCompleteTimeout);
 
         function tickLoader() {
           var elapsed = Date.now() - startTime;
@@ -161,6 +168,7 @@ const { title } = Astro.props;
           if (loaderLine) loaderLine.style.width = (count * 1.8) + 'px';
 
           if (count >= 100) {
+            clearTimeout(forceCompleteTimer);
             setTimeout(function() {
               loader && loader.classList.add('is-done');
               video && video.classList.add('is-ready');
